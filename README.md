@@ -9,6 +9,19 @@ Web Wizard is a dynamic event management platform designed to streamline event r
 - **Waiting List Management**: Automatically adds participants to a waiting list when events are full.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 
+- ![Uploading image.png…]()
+- ![Uploading image.png…]()
+
+- ![Uploading image.png…]()
+- ![Uploading image.png…]()
+
+- ![Uploading image.png…]()
+
+
+
+
+
+
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: PHP
