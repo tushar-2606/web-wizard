@@ -1,0 +1,19 @@
+{
+  "name": "web-wizard",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^latest",
+    "express-session": "^latest",
+    "connect-mongo": "^latest",
+    "mongoose": "^latest",
+    "bcrypt": "^latest",
+    "dotenv": "^latest",
+    "json2csv": "^latest",
+    "express-validator": "^latest"
+  }
+}
