@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #eef2f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #fff;
+    width: 400px;
+    padding: 2.5rem 2.5rem 3rem 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logo {
+    width: 180px;
+    height: 50px;
+    margin: 0 auto 1.8rem auto;
+    display: block;
+}
+
+.logo svg {
+    width: 100%;
+    height: 100%;
+    fill: #0052cc;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #0052cc;
+    margin-bottom: 2rem;
+    user-select: none;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #222;
+    font-size: 0.95rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.65rem 0.9rem;
+    margin-bottom: 1.4rem;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #0052cc;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background: #0052cc;
+    border: none;
+    padding: 0.85rem 0;
+    color: white;
+    font-weight: 700;
+    font-size: 1.15rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    user-select: none;
+}
+
+button:hover:not(:disabled) {
+    background: #003d99;
+}
+
+button:disabled {
+    background: #a0a0a0;
+    cursor: not-allowed;
+}
+
+.message {
+    margin-top: 1rem;
+    padding: 0.85rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.success {
+    background: #d4edda;
+    color: #115029;
+}
+
+.error {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.nav-link {
+    margin-top: 1.5rem;
+    display: block;
+    font-size: 0.9rem;
+    color: #0052cc;
+    cursor: pointer;
+    text-decoration: underline;
+    user-select: none;
+}
+
+.nav-link:hover {
+    color: #003d99;
+    transition: color 0.3s ease;
+}
+
+/* Registration page */
+body {
+    margin: 0;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #eef2f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #fff;
+    width: 420px;
+    padding: 2.5rem 2.5rem 3rem 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logo {
+    width: 180px;
+    height: 50px;
+    margin: 0 auto 1.8rem auto;
+    display: block;
+}
+
+.logo svg {
+    width: 100%;
+    height: 100%;
+    fill: #0052cc;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #0052cc;
+    margin-bottom: 2rem;
+    user-select: none;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #222;
+    font-size: 0.95rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.65rem 0.9rem;
+    margin-bottom: 1.4rem;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #0052cc;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background: #0052cc;
+    border: none;
+    padding: 0.85rem 0;
+    color: white;
+    font-weight: 700;
+    font-size: 1.15rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    user-select: none;
+}
+
+button:hover:not(:disabled) {
+    background: #003d99;
+}
+
+button:disabled {
+    background: #a0a0a0;
+    cursor: not-allowed;
+}
+
+.message {
+    margin-top: 1rem;
+    padding: 0.85rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.success {
+    background: #d4edda;
+    color: #115029;
+}
+
+.error {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.nav-link {
+    margin-top: 1.5rem;
+    display: block;
+    font-size: 0.9rem;
+    color: #0052cc;
+    cursor: pointer;
+    text-decoration: underline;
+    user-select: none;
+}
+
+.nav-link:hover {
+    color: #003d99;
+    transition: color 0.3s ease;
+}
+
+/* Student dashboard */
+body {
+    margin: 0;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #eef2f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    background: #fff;
+    width: 600px;
+    padding: 2.5rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto 3rem auto;
+}
+
+.logo {
+    width: 170px;
+    height: 56px;
+    margin: 0 auto 1.8rem auto;
+    display: block;
+}
+
+.logo svg {
+    width: 100%;
+    height: 100%;
+    fill: #0052cc;
+}
+
+h1, h2 {
+    user-select: none;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: #0052cc;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.logout-btn {
+    width: 100%;
+    background-color: #e94b3cff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.logout-btn:hover {
+    background-color: #bb3e2d;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: left;
+}
+
+.event-card {
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+    padding: 1.2rem 1.5rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0 0 0.4rem 0;
+    color: #222;
+    user-select: none;
+}
+
+.event-info {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.15rem;
+    user-select: none;
+}
+
+.register-status {
+    display: flex;
+    align-items: center;
+    color: #217346;
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+    user-select: none;
+}
+
+.register-status svg {
+    margin-right: 0.5rem;
+}
+
+.register-btn {
+    align-self: flex-start;
+    background-color: #0052cc;
+    color: white;
+    padding: 0.55rem 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.register-btn:hover:not(:disabled) {
+    background-color: #003d99;
+}
+
+.register-btn:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+/* Checkmark SVG inline style */
+.checkmark-icon {
+    width: 18px;
+    height: 18px;
+    fill: #217346;
+}
+
+/* Admin panel */
+body {
+    margin: 0;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #eef2f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    background: #fff;
+    width: 600px;
+    padding: 2.5rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto 3rem auto;
+}
+
+.logo {
+    width: 170px;
+    height: 56px;
+    margin: 0 auto 1.8rem auto;
+    display: block;
+}
+
+.logo svg {
+    width: 100%;
+    height: 100%;
+    fill: #0052cc;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: #0052cc;
+    margin-bottom: 2rem;
+    user-select: none;
+}
+
+.logout-btn {
+    background: #e94b3cff;
+    width: 100%;
+    padding: 0.8rem 0;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #bb3e2d;
+}
+
+section {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+    text-align: left;
+}
+
+h2.subheading {
+    margin-bottom: 1rem;
+    color: #0052cc;
+    user-select: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+}
+
+li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+    user-select: none;
+}
+
+li:last-child {
+    border-bottom: none;
+}
