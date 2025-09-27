@@ -27,7 +27,4 @@ Web Wizard is a dynamic event management platform designed to streamline event r
 
 ## Usage
 - Navigate to `index.php` to view and register for events.
-- Access the admin panel via `admin-login.php`.
-
-## License
-This project is licensed under the MIT License.
+- Access the admin panel via `admin-login.php`.(credentails: user:admin - password: admin123)
