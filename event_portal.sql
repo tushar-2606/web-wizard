@@ -1,31 +1,35 @@
-DROP DATABASE IF EXISTS event_portal;
-CREATE DATABASE event_portal;
-USE event_portal;
+CREATE DATABASE event_system;
+USE event_system;
 
+-- Admin table
+CREATE TABLE admins (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+-- Insert default admin (username: admin, password: admin123)
+INSERT INTO admins (username, password) 
+VALUES ('admin', SHA2('admin123', 256));
+
+-- Events table
 CREATE TABLE events (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    description TEXT NOT NULL,
-    max_capacity INT NOT NULL,
-    date DATE NOT NULL,
-    time_start TIME NOT NULL,
-    time_end TIME NOT NULL,
-    location VARCHAR(255) NOT NULL
+    capacity INT NOT NULL
 );
 
+INSERT INTO events (name, capacity) VALUES
+('Tech Talk 2025', 3),
+('Workshop AI Basics', 2);
+
+-- Participants table
 CREATE TABLE participants (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    event_id INT NOT NULL,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
+    event_id INT,
+    name VARCHAR(100),
+    email VARCHAR(100),
     phone VARCHAR(20),
-    status ENUM('registered','waiting') DEFAULT 'registered',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status ENUM('waiting','registered','rejected') DEFAULT 'waiting',
     FOREIGN KEY (event_id) REFERENCES events(id) ON DELETE CASCADE
 );
-
--- Sample events
-INSERT INTO events (name, description, max_capacity, date, time_start, time_end, location) VALUES
-('AI & Machine Learning Conference 2024', 'Join industry leaders and researchers...', 500, '2024-03-15', '09:00:00','18:00:00','Tech Convention Center, San Francisco'),
-('React & Frontend Development Workshop', 'Hands-on workshop covering modern React development...', 30, '2024-03-20','10:00:00','16:00:00','CodeSpace Learning Hub, Austin'),
-('Professional Networking Mixer', 'Connect with like-minded professionals across industries...',150,'2024-03-22','18:00:00','21:00:00','Skyline Rooftop, New York');
